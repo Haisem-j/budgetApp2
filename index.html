@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <title>Budget App</title>
+</head>
+<body>
+    <div id="container">
+        <div class="budget-display">
+            <h2>Available Budget in <span id="time"></span></h2>
+            <h1 id="total-budget">0.00</h1>
+            <div id="income">
+                <p>Income</p>
+                <p id="income-display">0.0</p>
+            </div>
+            <div id="expense">
+               <p>Expense</p>
+               <p id="expense-display">0.0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="input-bar">
+        <select name="adder" id="adder">
+            <option value="inc">+</option>
+            <option value="exp">-</option>
+        </select>
+        <input type="text" value="description" placeholder="    Add Description" id="desc">
+        <input type="number" value="quantity"placeholder="    Add " id="amount">
+        <button id="check-m">
+        <ion-icon name="checkmark" id="chek"></ion-icon>
+        </button>
+    </div>
+
+    <div class="input-content">
+        <div class="income">
+            <h2>Income</h2>
+        </div>
+
+        <div class="expense">
+            <h2>Expense</h2>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
